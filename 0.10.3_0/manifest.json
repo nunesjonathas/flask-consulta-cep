@@ -1,0 +1,25 @@
+{
+   "author": "Adriano Chambel M. de Lima \u003Cacmlima.softweb@gmail.com>",
+   "background": {
+      "scripts": [ "js/background.js", "js/service.js", "js/utils.js", "js/vendor/jquery.min.js", "js/vendor/ga.js", "js/vendor/moment.min.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "Correios Tracker - rastrear objetos"
+   },
+   "description": "Bem vindo(a) ao Correios Tracker, gerencie e rastreie seus objetos de forma automatizada.",
+   "homepage_url": "https://github.com/achambel/correios-tracker",
+   "icons": {
+      "128": "128x128.png",
+      "16": "16x16.png",
+      "48": "48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3RLYtR9nuPai1ck06RC3cGwiEXQolypPOVX10sdDLC7kHuoGnvE1mydrTabNAptyl48vWSxq47iRsEdVdZS0Tdq4D7GHhSS4IqBrQqDVrVqsqgtWjlbn4MeonV/+s0YItGIPY4Xb+1GGrdYsl31hFR4CWKMVcgv8xqDMBqzilurkG2c/q1jdmpNKRB5t4rAOoJ+v6CMx1HA59MuPohmcFW0IPkcz/XiWuRZhspcjuYS0NscIm5zSiUdPZBwdPmB1IVTH69+Y9Dnw+Z+Rt1xFLoqZ/mPO3HrCGF1daKJHItvP4ff3066UrcEiHJjjTkk0BmefDAiEDUt5hhqg1nk1PQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "55",
+   "name": "Correios Tracker",
+   "permissions": [ "tabs", "notifications", "storage", "alarms", "https://www2.correios.com.br/sistemas/rastreamento/resultado_semcontent.cfm" ],
+   "short_name": "Correios Tracker",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.10.3"
+}

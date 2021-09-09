@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+  </head>
+  <body>
+    <div class="ui vertical labeled icon left visible thin sidebar menu">
+      <div class="item">
+        <a class="ui mini logo icon image">
+          <img src="128x128.png">
+        </a>
+        <h5>Correios Tracker</h5>
+      </div>
+      <a class="item active" id="active-items-link">
+        <i class="shipping icon"></i>
+        Objetos
+        <div id="objectCounter" class="ui red left label">0</div>
+      </a>
+      <a class="item" id="archived-link">
+        <i class="folder open icon"></i>
+        Arquivados
+        <div id="archivedCounter" class="ui left label">0</div>
+      </a>
+      <a class="item" id="settings-link">
+        <i class="settings icon"></i>
+        Configurações
+      </a>
+      <a class="item" id="help-link">
+        <i class="money icon"></i>
+        Por que devo doar?
+      </a>
+    </div>
+
+    <div id="content" class="dimmed pusher">
+      <div id="container"></div>
+      <div>
+        <input type="file" accept="text/*" id="inputFile" style="display: none;">
+      </div>
+    </div>
+  </div>
+
+    <div id="message-modal" class="ui basic modal">
+      <div class="ui header">Tracks</div>
+      <div class="content"></div>
+    </div>
+
+    <div id="help-modal" class="ui basic modal">
+      <div class="ui red centered header">Precisamos da sua ajuda</div>
+      <div class="content">
+        <h3>Este projeto não inclui nenhum tipo de spam, publicidade ou algo que possa atrapalhar seu foco.</h3>
+        <h3>Entretanto, também não gera nenhum tipo de rendimento para os desenvolvedores.</h3>
+        <h3>Para que continuemos a evoluir e melhorar a cada nova versão, solicitamos uma contribuição de qualquer valor.</h3>
+        <h3>Obrigado! 😀</h3>
+        <div class="actions" style="text-align: center;">
+          <a class="ui labeled icon red button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HJDYN2DG4V8RQ"
+            target="_blank">
+            <i class="dollar icon"></i>
+            DOAR!
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p id="footerLeft">Feito com
+        <i class="red heart icon"></i>. Se você considera esta ferramenta útil, por favor
+        <a class="ui labeled icon red button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HJDYN2DG4V8RQ"
+          target="_blank">
+          <i class="dollar icon"></i>
+          DOE!
+        </a>
+      </p>
+    
+      <div id="footerRight" class="ui toggle checkbox">
+        <input type="checkbox" id="theme">
+        <label class="label" style="cursor: pointer;" for="theme">
+          Tema Dark
+        </label>
+      </div>
+    </footer>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/semantic.min.js"></script>
+    <script src="js/vendor/moment.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/options.js"></script>
+    <script src="js/service.js"></script>
+  </body>
+</html>

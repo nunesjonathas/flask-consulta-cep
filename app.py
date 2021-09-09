@@ -9,12 +9,20 @@ def index():
     return render_template("index.html")
 
 
+# def consultar_cep():
+#     client = Client(
+#         "https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente?wsdl"
+#     )
+#     data = client.service.consultaCEP(request.form.get("vapNuEtiquetaEncomenda"))
+#     data = data.__dict__
+
+#     return jsonify(data["__values__"])
+
+
 @app.route("/consultar-cep", methods=["POST"])
 def consultar_cep():
-    client = Client(
-        "https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente?wsdl"
-    )
-    data = client.service.consultaCEP(request.form.get("vapNuEtiquetaEncomenda"))
+    client = Client("https://correios.contrateumdev.com.br/api/rastreio")
+    data = client.service.consultaCEP(request.form.post("LB249234094HK"))
     data = data.__dict__
 
     return jsonify(data["__values__"])
